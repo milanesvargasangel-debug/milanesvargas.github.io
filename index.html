@@ -1,0 +1,122 @@
+		        font-size: 1.8rem;
+		    }
+		
+		    header p {
+		        font-size: 1rem;
+		    }
+		
+		    nav ul {
+		        flex-direction: column;
+		        align-items: stretch;
+		        gap: 5px;
+		    }
+		
+		    nav a {
+		        display: block;
+		    }
+		
+		    main {
+		        margin: 25px auto;
+		        padding: 0 12px;
+		    }
+		
+		    section {
+		        padding: 20px;
+		    }
+		
+		    section h2 {
+		        font-size: 1.35rem;
+		    }
+		
+		    section ul {
+		        grid-template-columns: 1fr;
+		    }
+		}
+		
+		/* ==========================
+		   ACCESIBILIDAD
+		========================== */
+		
+		a:focus-visible {
+		    outline: 3px solid var(--azul-acento);
+		    outline-offset: 4px;
+		}
+		
+		@media (prefers-reduced-motion: reduce) {
+		    *,
+		    *::before,
+		    *::after {
+		        scroll-behavior: auto !important;
+		        transition: none !important;
+		        animation: none !important;
+		    }
+		}
+
+	</style>
+
+    <header>
+        <h1>Angel Santos Milanés Vargas</h1>
+        <p>Estudiante de Ingeniería en Ciencias Informáticas</p>
+
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#formacion">Formación académica</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre-mi">
+            <h2>Sobre mí</h2>
+            <p>
+                Soy Angel Santos Milanés Vargas, estudiante de Ingeniería
+                en Ciencias Informáticas, interesado en la programación,
+                el desarrollo de software y las nuevas tecnologías.
+            </p>
+        </section>
+
+        <section id="formacion">
+            <h2>Formación académica</h2>
+            <p>
+                Actualmente curso la carrera de Ingeniería en Ciencias
+                Informáticas.
+            </p>
+        </section>
+
+        <section id="proyectos">
+            <h2>Proyectos</h2>
+            <p>
+                En esta sección se mostrarán los proyectos académicos
+                y personales que desarrolle durante mi formación.
+            </p>
+        </section>
+
+        <section id="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Estudiando los fundamentos de programación</li>
+                <li>Trabajo bajo presión</li>
+                <li>Resolución de problemas</li>
+                <li>Trabajo en equipo</li>
+            </ul>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Numero de Contacto: <br><spam>56438733<spam></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            &copy; 2026 Angel Santos Milanés Vargas.
+            Todos los derechos reservados.
+        </p>
+    </footer>
+
+</body>
+</html>
